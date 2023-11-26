@@ -6,7 +6,4 @@ services:
       - 5002:80
     volumes:
       - ./:/var/www/
-    command:  bash -c "
-      a2enmod rewrite remoteip
-      && apache2-foreground
-      "
+    command: bash -c "a2enmod rewrite remoteip && apache2-foreground"

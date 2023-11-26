@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="col p-5">
-                <img class="mt-5 screenshot" src="https://github.com/louislam/dockge/assets/1336778/26a583e1-ecb1-4a8d-aedf-76157d714ad7" alt="screenshot" />
+                <img class="mt-5 screenshot" src="/screenshot.png" alt="screenshot" />
             </div>
         </div>
     </div>

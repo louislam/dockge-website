@@ -6,10 +6,7 @@ services:
       - 5002:80
     volumes:
       - ./:/var/www/
-    command:  bash -c "
-        a2enmod rewrite remoteip
-        && apache2-foreground
-      "
+    command: bash -c "a2enmod rewrite remoteip && apache2-foreground"
   cloudflared:
     image: cloudflare/cloudflared:latest
     command: tunnel --no-autoupdate run --token ${TUNNEL_TOKEN}
@@ -17,3 +14,4 @@ services:
 x-dockge:
   urls:
     - https://dockge.kuma.pet
+networks: {}
