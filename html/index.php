@@ -8,4 +8,9 @@ $app->get("/", function () use ($plates) {
     echo $plates->render("main");
 });
 
+$app->get("/version", function () use ($plates, $app) {
+    $app->response()->header("Content-Type", "application/json");
+    echo file_get_contents("../version.json");
+});
+
 $app->run();
