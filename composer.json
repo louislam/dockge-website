@@ -4,6 +4,6 @@
         "league/plates": "^3.5"
     },
     "scripts": {
-        "dev": "docker compose up"
+        "dev": "docker compose -f compose-dev.yaml up"
     }
 }

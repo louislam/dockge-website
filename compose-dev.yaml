@@ -1,0 +1,8 @@
+services:
+  dockge-website:
+    image: php:8.1-apache
+    restart: unless-stopped
+    ports:
+      - 5002:80
+    volumes:
+      - ./:/var/www/
