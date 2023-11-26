@@ -1,0 +1,9 @@
+{
+    "require": {
+        "gammadia/slim-2.x": "^2.6",
+        "league/plates": "^3.5"
+    },
+    "scripts": {
+        "dev": "docker compose up"
+    }
+}

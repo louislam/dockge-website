@@ -1,0 +1,10 @@
+services:
+  dockge-website:
+    image: php:8.1-apache
+    ports:
+      - 5002:80
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/
