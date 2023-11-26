@@ -61,7 +61,7 @@ h1 {
 }
 
 .screenshot {
-
+    max-width: 100%;
     box-shadow: 0 0 10px #74c2ff;
     border-radius: 10px;
 }

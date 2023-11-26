@@ -4,11 +4,10 @@
     <title>Dockge</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A self-hosted monitoring tool" />
+    <meta name="description" content="Self-hosted - Docker compose.yaml - Stack-oriented Manager " />
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-    <meta name="google-site-verification" content="dN_3ww4h_ShmISE82F-Qmr4MAliHmaGGEHRfuWgxM4E" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <link rel="stylesheet" type="text/css" href="/main.css?v=2" />
 </head>
 
 <body>
@@ -31,8 +30,8 @@
 
                 </div>
             </div>
-            <div class="col">
-                <img class="mt-5 screenshot" src="https://github.com/louislam/dockge/assets/1336778/26a583e1-ecb1-4a8d-aedf-76157d714ad7" alt="screenshot" style="max-width:100%" />
+            <div class="col p-5">
+                <img class="mt-5 screenshot" src="https://github.com/louislam/dockge/assets/1336778/26a583e1-ecb1-4a8d-aedf-76157d714ad7" alt="screenshot" />
             </div>
         </div>
     </div>
