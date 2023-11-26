@@ -14,3 +14,6 @@ services:
     image: cloudflare/cloudflared:latest
     command: tunnel --no-autoupdate run --token ${TUNNEL_TOKEN}
     restart: unless-stopped
+x-dockge:
+  urls:
+    - https://dockge.kuma.pet
