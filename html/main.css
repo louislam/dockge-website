@@ -59,6 +59,7 @@ h1 {
     box-shadow: 0 0 10px #74c2ff;
     border-radius: 20px;
     transition: all ease-in-out 0.3s;
+    margin-top: 120px;
 }
 
 .screenshot:hover {

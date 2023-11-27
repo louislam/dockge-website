@@ -7,8 +7,8 @@
     <meta name="description" content="Self-hosted - Docker compose.yaml - Stack-oriented Manager " />
     <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="/prism.css?v=3" />
-    <link rel="stylesheet" type="text/css" href="/main.css?v=3" />
+    <link rel="stylesheet" type="text/css" href="/prism.css?v=4" />
+    <link rel="stylesheet" type="text/css" href="/main.css?v=4" />
 </head>
 
 <body>
@@ -73,7 +73,7 @@ docker compose up -d
                 </div>
             </div>
             <div class="col p-5">
-                <img class="mt-5 screenshot" src="/screenshot.png" alt="screenshot" />
+                <img class="screenshot" src="/screenshot.png" alt="screenshot" />
             </div>
         </div>
     </div>
