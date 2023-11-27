@@ -124,7 +124,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/app/data
-      # ⚠️ Left Stacks Path === Right Stacks Path (MUST)
+      # Stacks Directory
+      # ⚠️ READ IT CAREFULLY. If you did it wrong, your data could end up writing into a WRONG PATH.
+      # ⚠️ 1. FULL path only. No relative path (MUST)
+      # ⚠️ 2. Left Stacks Path === Right Stacks Path (MUST)
       - ${this.stacksPathFinal}:${this.stacksPathFinal}
     environment:
       # Tell Dockge where to find the stacks
