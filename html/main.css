@@ -27,8 +27,12 @@ h1 {
     background: linear-gradient(135deg, #74c2ff 0%, #74c2ff 75%, #86e6a9);
     border-color: #54DC8C;
     border-radius: 50rem !important;
-    width: 150px;
     color: black;
+}
+
+.flex .btn-primary {
+    min-width: 150px;
+    padding: 0.375rem 25px;
 }
 
 .btn-primary:hover {
@@ -47,21 +51,40 @@ h1 {
 }
 
 .main-container > .row {
-    height: 100vh;
-    align-items: center;
-}
 
-.cmd {
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 50rem;
-    max-width: 80%;
 }
 
 .screenshot {
     max-width: 100%;
     box-shadow: 0 0 10px #74c2ff;
-    border-radius: 10px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.screenshot:hover {
+    transform: scale(1.5);
+    transform-origin: right;
+}
+
+.compose-yaml {
+    border-radius: 20px;
+    background-color: black;
+}
+
+.compose-yaml pre {
+    background-color: transparent;
+}
+
+input[type=text] {
+    background-color: black;
+    color: #EEE;
+    border-color: #333;
+    border-radius: 0 15px 15px 0;
+}
+
+.input-group-text {
+    background-color: #2e2f3c;
+    color: #EEE;
+    border-color: #333;
+    border-radius: 15px 0 0 15px;
 }
