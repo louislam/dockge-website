@@ -59,7 +59,7 @@ mkdir -p /opt/stacks /opt/dockge
 cd /opt/dockge
 
 # Download your compose.yaml
-curl {{ downloadPath }} --output compose.yaml
+curl "{{ downloadPath }}" --output compose.yaml
 
 # Start the Server
 docker compose up -d
