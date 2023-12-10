@@ -1,0 +1,19 @@
+x-dockge:
+  name: Uptime Kuma
+  description: Uptime Kuma is a fancy self-hosted monitoring tool.
+  author: Louis Lam
+  repo: https://github.com/louislam/uptime-kuma
+  icon: https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.png
+  sort: 1000000
+  screenshots:
+    - https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/screenshot.png
+    - https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/screenshot2.png
+version: '3.8'
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "3001:3001"
+    restart: always
