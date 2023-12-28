@@ -32,7 +32,7 @@ cd $workingDir
 ls -la
 git fetch --all
 git checkout origin/master --force
-compose run-script install-dependencies
+docker compose exec dockge-website composer install
 ");
 
 $ssh->disconnect();
