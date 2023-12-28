@@ -3,8 +3,6 @@ services:
     image: php:8.1-apache
     restart: unless-stopped
     working_dir: /var/www
-    ports:
-      - 5002:80
     volumes:
       - ./:/var/www/
     command: bash -c "a2enmod rewrite remoteip && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && apache2-foreground"
