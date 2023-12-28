@@ -32,7 +32,7 @@ cd $workingDir
 ls -la
 git fetch --all
 git checkout origin/master --force
-composer install
+compose run-script install-dependencies
 ");
 
 $ssh->disconnect();

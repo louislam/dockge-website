@@ -7,6 +7,7 @@
     },
     "scripts": {
         "dev": "docker compose -f compose-dev.yaml up --force-recreate",
-        "deploy": "php ./deploy.php"
+        "deploy": "php ./deploy.php",
+        "install-dependencies": "docker compose exec dockge-website composer install"
     }
 }
