@@ -41,7 +41,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Port</span>
                         </div>
-                        <input type="text" v-model="port" class="form-control" placeholder="Port" />
+                        <input type="text" v-model="port" class="form-control" placeholder="Port" min="1" max="65535" />
                     </div>
 
                     <h2 class="my-4">compose.yaml</h2>
