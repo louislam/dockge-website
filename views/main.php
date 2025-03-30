@@ -114,8 +114,7 @@ docker compose up -d
                 }
             },
             composeYAML() {
-                return `version: "3.8"
-services:
+                return `services:
   dockge:
     image: louislam/dockge:1
     restart: unless-stopped

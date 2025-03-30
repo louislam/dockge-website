@@ -18,7 +18,6 @@ $app->get("/compose.yaml", function () use ($plates, $app) {
     $port = $app->request()->get("port", 5001);
     $stacksPath = $app->request()->get("stacksPath", "/opt/stacks");
     echo <<< YAML
-version: "3.8"
 services:
   dockge:
     image: louislam/dockge:1

@@ -8,7 +8,6 @@ x-dockge:
   screenshots:
     - https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/screenshot.png
     - https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/screenshot2.png
-version: '3.8'
 services:
   uptime-kuma:
     image: louislam/uptime-kuma:1
