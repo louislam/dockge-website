@@ -41,7 +41,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">Port</span>
                         </div>
-                        <input type="text" v-model="port" class="form-control" placeholder="Port" min="1" max="65535" />
+                        <input type="text" v-model="port" class="form-control" placeholder="Port" />
                     </div>
 
                     <h2 class="my-4">compose.yaml</h2>
@@ -91,6 +91,25 @@ docker compose up -d
                 port: 5001,
                 stacksPath: "/opt/stacks",
             }
+        },
+        watch: {
+            port(newVal, oldVal) {
+                // Allow empty value
+                if (newVal === "") {
+                    return;
+                }
+
+                // Check if is a number
+                if (isNaN(newVal)) {
+                    this.port = oldVal;
+                    return;
+                }
+
+                if (newVal < 1 || newVal > 65535) {
+                    this.port = oldVal;
+                    return;
+                }
+            },
         },
         computed: {
             downloadPath() {
